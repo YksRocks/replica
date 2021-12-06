@@ -1,0 +1,372 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  background-color: #f4f7fa;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  height: 80px;
+}
+
+.header .logo {
+  font-family: "Teko", sans-serif;
+  font-size: 35px;
+  font-weight: 500;
+  background-color: white;
+  margin-left: 40px;
+  cursor: pointer;
+}
+
+.rec_time {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: white;
+  margin-right: 40px;
+}
+.rec_time p {
+  font-family: "Readex Pro", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  background-color: transparent;
+}
+
+.rec_time img,
+.rec_time p:nth-of-type(1) {
+  margin-right: 10px;
+  background-color: white;
+}
+
+.mainContent {
+  display: flex;
+  height: 560px;
+  overflow: hidden;
+}
+.people {
+  display: flex;
+  flex-direction: column;
+  margin-right: 15px;
+}
+
+.cameraMan img,
+.presenters,
+.attendees,
+.stuVids .vid {
+  border: rgb(255, 255, 255) 10px solid;
+  border-radius: 10px;
+  background-color: white;
+  padding: 10px;
+}
+
+.cameraMan img {
+  height: 212px;
+  /* width: 400px; */
+}
+
+.presenters p {
+  background-color: rgb(255, 255, 255) !important;
+}
+.attendees p {
+  background-color: rgb(255, 255, 255) !important;
+}
+
+.screen {
+  margin: 0;
+  background-color: rgb(255, 255, 255) !important;
+}
+
+.screen p {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: rgb(255, 255, 255) !important;
+  margin-top: 0;
+}
+
+.mainContent {
+  margin: 20px 80px 10px;
+}
+
+.presenters {
+  margin-top: 20px;
+  min-height: 135px;
+  max-height: 136px;
+  overflow: scroll;
+}
+
+#presenters {
+  font-family: "Teko", sans-serif;
+  font-size: 25px;
+  color: black;
+}
+.presenters p {
+  font-family: "Readex Pro", sans-serif;
+  font-size: 16px;
+  color: #504d4d;
+  margin-bottom: 5px;
+}
+.presenters::-webkit-scrollbar {
+  width: 5px;
+  height: 10px;
+}
+
+.presenters::-webkit-scrollbar-thumb {
+  background-color: rgb(151, 151, 151);
+  border-radius: 20px;
+}
+
+.attendees {
+  margin-top: 15px;
+}
+#attendees {
+  font-family: "Teko", sans-serif;
+  font-size: 25px;
+  color: black;
+}
+.attendees p {
+  font-family: "Readex Pro", sans-serif;
+  font-size: 16px;
+  color: #504d4d;
+  margin-bottom: 5px;
+}
+
+.attendees {
+  height: 250px;
+  overflow: scroll;
+}
+
+.attendees::-webkit-scrollbar {
+  width: 5px;
+  height: 10px;
+}
+
+.attendees::-webkit-scrollbar-thumb {
+  background-color: rgb(151, 151, 151);
+  border-radius: 20px;
+}
+
+.screen {
+  margin-right: 15px;
+  width: 800px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.screen img {
+  height: 518px;
+  border-radius: 15px;
+}
+.screen p {
+  font-family: "Readex Pro", sans-serif;
+  font-size: 19px;
+  margin: 0px 44px 0 0;
+  align-content: flex-start;
+  width: 590px;
+}
+
+.stuVids .vid {
+  border: rgb(255, 255, 255) 10px solid;
+  border-radius: 20px;
+  padding: 43px 0px;
+  max-width: 350px;
+  max-height: 170px;
+  background-color: #e0e0e0;
+  cursor: pointer;
+}
+.stuVids .vid {
+  margin-bottom: 15px;
+}
+.stuVids {
+  overflow: scroll;
+}
+.stuVids::-webkit-scrollbar {
+  width: 5px;
+  height: 10px;
+}
+
+.stuVids::-webkit-scrollbar-thumb {
+  background-color: #f4f7fa;
+  border-radius: 20px;
+}
+
+.stuVids .vid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.7s;
+}
+.stuVids .vid:hover {
+  background-color: #aaffd6;
+}
+.stuVids p {
+  font-family: "Readex Pro", sans-serif;
+  background-color: rgb(255, 255, 255);
+  margin: 0;
+  padding: 0;
+  padding: 15px;
+  border-radius: 50%;
+  font-size: 30px;
+  margin: 0px 150px;
+  margin-bottom: 15px;
+  box-shadow: 0 0 10px #aaffd6;
+}
+
+.stuVids img {
+  margin: 0;
+  padding: 0;
+  margin-right: 250px;
+  background-color: rgba(255, 255, 255, 0);
+  width: 18px;
+  height: 20px;
+}
+.unmute {
+  width: 10px !important;
+}
+.mute {
+  width: 13px !important;
+}
+.footer {
+  display: flex;
+  border-radius: 10px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(255, 255, 255);
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 15px;
+  height: 80px;
+  width: 95%;
+  padding-bottom: 15px;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-bottom: 8px;
+
+  margin-top: 12px;
+}
+
+.presenterName {
+  display: flex;
+  flex-direction: column;
+}
+
+.leavebtn {
+  display: flex;
+  flex-direction: row;
+}
+
+.presenterName {
+  align-items: center;
+  background-color: white !important;
+  height: 50px;
+}
+.presenterName p {
+  font-family: "Readex Pro", sans-serif;
+  font-weight: 500;
+  height: 50px;
+  background-color: white !important;
+}
+
+.presenterName p:nth-of-type(2) {
+  color: #87888a;
+}
+
+.leavebtn {
+  position: relative;
+  padding: 10px 20px;
+  background-color: #ff2c2c;
+  align-items: center;
+  border-radius: 8px;
+  border: none;
+  transition: all 0.7s;
+  overflow: hidden;
+  width: 130px;
+  height: 45px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.leavebtn p {
+  background-color: #ff2c2c;
+  color: white;
+  font-family: "Readex Pro", sans-serif;
+  margin-left: 8px;
+  position: absolute;
+  font-size: 18px;
+  margin-left: 200px;
+}
+.leavebtn img {
+  background-color: #ff2c2c;
+  height: 21px;
+}
+
+#exit {
+  transition: all 0.5s;
+}
+#textLeave {
+  transition: all 0.5s;
+}
+
+#leavebtn:hover > #textLeave {
+  margin-left: 40px;
+}
+#leavebtn:hover > #exit {
+  margin-left: -60px;
+}
+
+.options {
+  cursor: pointer !important;
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(255, 255, 255);
+}
+.options img {
+  padding: 15px 28px;
+  border-radius: 15px;
+  transition: all 0.7s;
+  background-color: #e0e0e0;
+}
+.options img:hover {
+  background-color: #aaffd6;
+}
+
+.options .camIcon,
+.options .micOffOn,
+.options .whiteBoard,
+.options .setting {
+  margin-right: 20px;
+  height: 45px;
+  border-radius: 10px;
+}
+
+.options .camIcon img,
+.options .micOffOn img,
+.options .whiteBoard img,
+.options .setting img {
+  height: 45px;
+}
+.options .micOffOn img {
+  padding: 13px 30px;
+  height: 45px;
+}
+.options .whiteBoard img {
+  padding: 13px 30px;
+}
+.options .setting img {
+  padding: 13px 30px;
+}
+.options button {
+  border: 0;
+  cursor: pointer;
+}
